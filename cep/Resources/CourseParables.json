@@ -1,0 +1,363 @@
+[
+    {
+        "id": 10,
+        "name": "Сеятель",
+        "nameFull": "Притча о сеятеле",
+        "imageName": "parable_seeder",
+        "row": 0,
+        "taskGroups": [
+            {
+                "name": "ЗНАКОМСТВО",
+                "tasks": [
+                    {
+                        "type": "read_excerpt",
+                        "done": true,
+                        "data": "mf 1:3-8, mf 1:15"
+                    },
+                    {
+                        "type": "listen_audio",
+                        "done": true,
+                        "data": ""
+                    },
+                    {
+                        "type": "watch_video",
+                        "done": true,
+                        "data": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Доброе семя и плевелы",
+        "nameFull": "Притча о добром семени и о плевелах",
+        "imageName": "parable_plants",
+        "row": 0,
+        "taskGroups": [
+            {
+                "name": "ЗНАКОМСТВО",
+                "tasks": [
+                    {
+                        "type": "read_excerpt",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "listen_audio",
+                        "done": true,
+                        "data": ""
+                    },
+                    {
+                        "type": "watch_video",
+                        "done": true,
+                        "data": ""
+                    }
+                ]
+            },
+            {
+                "name": "УЧИМ ЦИТАТУ",
+                "tasks": [
+                    {
+                        "type": "insert_missed",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "find_words",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "put_in_order",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "write_by_heart",
+                        "done": false,
+                        "data": ""
+                    }
+                ]
+            },
+            {
+                "name": "ОБСУЖДЕНИЕ",
+                "tasks": [
+                    {
+                        "type": "discuss_with_god",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "comment",
+                        "done": false,
+                        "data": ""
+                    }
+                ]
+            },
+            {
+                "name": "ЗАКРЕПЛЕНИЕ",
+                "tasks": [
+                    {
+                        "type": "answer_question",
+                        "done": false,
+                        "data": ""
+                    },
+                    {
+                        "type": "pass_test",
+                        "done": true,
+                        "data": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Горчичное зерно",
+        "nameFull": "Притча о горчичном зерне",
+        "imageName": "parable_mustard",
+        "row": 1,
+        "taskGroups": []
+    },
+    {
+        "id": 40,
+        "name": "Закваска",
+        "nameFull": "Притча о закваске",
+        "imageName": "parable_leaven",
+        "row": 1,
+        "taskGroups": []
+    },
+    {
+        "id": 50,
+        "name": "Скрытое сокровище",
+        "nameFull": "Притча о сокровище, скрытом на поле",
+        "imageName": "parable_treasure",
+        "row": 2,
+        "taskGroups": []
+    },
+    {
+        "id": 60,
+        "name": "Купец и жемчуг",
+        "nameFull": "Притча о купце, ищущем хорошего жемчуга",
+        "imageName": "parable_pearl",
+        "row": 2,
+        "taskGroups": []
+    },
+    {
+        "id": 70,
+        "name": "Невод в море",
+        "nameFull": "Притча о неводе, закинутом в море",
+        "imageName": "parable_fishing",
+        "row": 3,
+        "taskGroups": []
+    },
+    {
+        "id": 80,
+        "name": "Немилосердный должник",
+        "nameFull": "Притча о немилосердном должнике",
+        "imageName": "parable_jail",
+        "row": 4,
+        "taskGroups": []
+    },
+    {
+        "id": 90,
+        "name": "Работники в винограднике",
+        "nameFull": "Притча о работниках в винограднике",
+        "imageName": "parable_grape",
+        "row": 5,
+        "taskGroups": []
+    },
+    {
+        "id": 100,
+        "name": "Два сына",
+        "nameFull": "Притча о двух сыновьях",
+        "imageName": "parable_brothers",
+        "row": 5,
+        "taskGroups": []
+    },
+    {
+        "id": 110,
+        "name": "Злые виноградари",
+        "nameFull": "Притча о злых виноградарях",
+        "imageName": "parable_sword",
+        "row": 6,
+        "taskGroups": []
+    },
+    {
+        "id": 120,
+        "name": "Благоразумный раб",
+        "nameFull": "Притча о благоразумном рабе",
+        "imageName": "parable_hardworker",
+        "row": 7,
+        "taskGroups": []
+    },
+    {
+        "id": 130,
+        "name": "Десять дев",
+        "nameFull": "Притча о десяти девах",
+        "imageName": "parable_tengirls",
+        "row": 7,
+        "taskGroups": []
+    },
+    {
+        "id": 140,
+        "name": "Таланты",
+        "nameFull": "Притча о талантах",
+        "imageName": "parable_coins",
+        "row": 8,
+        "taskGroups": []
+    },
+    {
+        "id": 150,
+        "name": "Неприметное возрастание",
+        "nameFull": "Притча о семени, возрастающем в земле неприметным образом",
+        "imageName": "parable_tree",
+        "row": 9,
+        "taskGroups": []
+    },
+    {
+        "id": 160,
+        "name": "Два должника",
+        "nameFull": "Притча о двух должниках",
+        "imageName": "parable_scales",
+        "row": 0,
+        "taskGroups": []
+    },
+    {
+        "id": 170,
+        "name": "Добрый самарянин",
+        "nameFull": "Притча о добром самарянине",
+        "imageName": "parable_help",
+        "row": 10,
+        "taskGroups": []
+    },
+    {
+        "id": 180,
+        "name": "Хлеб в полночь",
+        "nameFull": "Притча о человеке, просящем хлеба в полночь у своего друга",
+        "imageName": "parable_midnight",
+        "row": 10,
+        "taskGroups": []
+    },
+    {
+        "id": 190,
+        "name": "Неразумный богач",
+        "nameFull": "Притча о неразумном богаче",
+        "imageName": "parable_hay",
+        "row": 11,
+        "taskGroups": []
+    },
+    {
+        "id": 200,
+        "name": "Неплодная смоковница",
+        "nameFull": "Притча о неплодной смоковнице в винограднике",
+        "imageName": "parable_dry",
+        "row": 11,
+        "taskGroups": []
+    },
+    {
+        "id": 210,
+        "name": "Тесные врата",
+        "nameFull": "Притча о тесных вратах",
+        "imageName": "parable_gate",
+        "row": 12,
+        "taskGroups": []
+    },
+    {
+        "id": 220,
+        "name": "Брачный пир",
+        "nameFull": "Притча о брачном пире",
+        "imageName": "parable_wedding",
+        "row": 13,
+        "taskGroups": []
+    },
+    {
+        "id": 230,
+        "name": "Заблудившаяся овца",
+        "nameFull": "Притча о заблудившейся овце",
+        "imageName": "parable_shepherd",
+        "row": 13,
+        "taskGroups": []
+    },
+    {
+        "id": 240,
+        "name": "Потерянная драхма",
+        "nameFull": "Притча о потерянной драхме",
+        "imageName": "parable_drachma",
+        "row": 14,
+        "taskGroups": []
+    },
+    {
+        "id": 250,
+        "name": "Блудный сын",
+        "nameFull": "Притча о блудном сыне",
+        "imageName": "parable_brothers",
+        "row": 14,
+        "taskGroups": []
+    },
+    {
+        "id": 260,
+        "name": "Неверный домоправитель",
+        "nameFull": "Притча о неверном домоправителе",
+        "imageName": "parable_house",
+        "row": 14,
+        "taskGroups": []
+    },
+    {
+        "id": 270,
+        "name": "Богач и Лазарь",
+        "nameFull": "Притча о богаче и Лазаре",
+        "imageName": "parable_fire",
+        "row": 15,
+        "taskGroups": []
+    },
+    {
+        "id": 280,
+        "name": "Работник с поля",
+        "nameFull": "Притча о работнике, пришедшем с поля",
+        "imageName": "parable_farmer",
+        "row": 15,
+        "taskGroups": []
+    },
+    {
+        "id": 290,
+        "name": "Неправедный судья",
+        "nameFull": "Притча о неправедном судье",
+        "imageName": "parable_judge",
+        "row": 16,
+        "taskGroups": []
+    },
+    {
+        "id": 300,
+        "name": "Фарисей и мытарь",
+        "nameFull": "Притча о фарисее и мытаре",
+        "imageName": "parable_priest",
+        "row": 16,
+        "taskGroups": []
+    },
+    {
+        "id": 310,
+        "name": "Десять мин",
+        "nameFull": "Притча о десяти минах",
+        "imageName": "parable_coins",
+        "row": 17,
+        "taskGroups": []
+    },
+    {
+        "id": 320,
+        "name": "Смоковница и деревья",
+        "nameFull": "Притча о смоковнице и деревьях",
+        "imageName": "parable_colortree",
+        "row": 18,
+        "taskGroups": []
+    },
+    {
+        "id": 330,
+        "name": "Добрый пастырь и наёмник",
+        "nameFull": "Притча о добром пастыре и наёмнике",
+        "imageName": "parable_shepherd",
+        "row": 18,
+        "taskGroups": []
+    }
+]
