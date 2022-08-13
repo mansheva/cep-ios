@@ -25,6 +25,7 @@ struct DesignColors {
     let TextGreen = Color.init(red: 162/ff, green: 208/ff, blue: 86/ff)
     let TextGray = Color.init(red: 196/ff, green: 196/ff, blue: 196/ff)
     let TextPink = Color.init(red: 210/ff, green: 28/ff, blue: 128/ff)
+    let BaseOrange = Color.init(red: 252/ff, green: 140/ff, blue: 41/ff)
     
     let YellowStar = Color.init(red: 255/ff, green: 199/ff, blue: 0/ff)
     

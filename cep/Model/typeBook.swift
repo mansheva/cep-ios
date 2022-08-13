@@ -12,7 +12,7 @@ struct Verse: Hashable, Codable {
     var text: String
 }
 
-struct Chapter: Hashable, Codable {
+struct Chapter: Hashable, Codable, Identifiable {
     var id: Int
     var verses: [Verse]
 }

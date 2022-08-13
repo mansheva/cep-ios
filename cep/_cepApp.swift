@@ -27,6 +27,7 @@ struct _3234234App: App {
     var body: some Scene {
         
         WindowGroup {
+            /*
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
                 
                 viewCourses().tabItem {
@@ -49,10 +50,8 @@ struct _3234234App: App {
                     Text("Профиль")
                 }.tag(4)
             }
-            //.accentColor(designColors.TabBlue)
-            //.background(designColors.TabGray)
-            //.accentcolo
-            
+            */
+            viewCourses()
         }
     }
 }

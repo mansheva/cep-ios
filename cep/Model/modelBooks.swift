@@ -7,7 +7,12 @@
 
 import Foundation
 
-var book: Book = loadBook("mf.json")
+var book: Book = loadBook("nrt-mf.json")
+
+var books: [String:Book] = [
+                            "SYNO":loadBook("syno-mf.json"),
+                            "NRT":loadBook("nrt-mf.json")
+                           ]
 
 func loadBook<T: Decodable>(_ filename: String) -> T {
     let data: Data

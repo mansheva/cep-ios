@@ -12,6 +12,7 @@ struct Task: Hashable, Codable {
     var type: String
     var done: Bool
     var data: String
+    var dataDescription: String
 }
 
 struct TaskGroup: Hashable, Codable {
