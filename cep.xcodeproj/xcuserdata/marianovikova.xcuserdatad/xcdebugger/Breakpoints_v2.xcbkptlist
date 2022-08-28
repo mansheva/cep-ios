@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "71A5EA0A-6DC4-4FCF-A4C0-BA7B614F478E"
+            uuid = "BEC1E680-C448-4CA8-A0A2-407EC2545F2A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cep/Views/viewTaskReadExcerpt.swift"
+            filePath = "cep/Views/viewTaskListenAudio.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "viewExcerptStrings(excerpt:)"
-            landmarkType = "7">
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "48E19C72-AF34-449E-9B88-D0A11A8274C8"
+            uuid = "DB939848-A146-4FC9-B1AD-20CE75DF9F54"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cep/Views/viewTaskReadExcerpt.swift"
+            filePath = "cep/Views/viewTaskListenAudio.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "viewExcerptStrings(excerpt:)"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "sliderEditingChanged(editingStarted:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

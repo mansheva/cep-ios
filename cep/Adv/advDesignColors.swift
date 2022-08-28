@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 let ff = 255.0
-let basePadding = 20.0
 
 struct DesignColors {
     
@@ -22,10 +21,22 @@ struct DesignColors {
     
     let TextBase = Color.init(red: 50/ff, green: 50/ff, blue: 50/ff)
     let TextBlue = Color.init(red: 14/ff, green: 129/ff, blue: 165/ff)
+    let TextDarkBlue = Color.init(red: 7/ff, green: 80/ff, blue: 103/ff)
+    let TextLightBlue = Color.init(red: 10/ff, green: 183/ff, blue: 238/ff)
     let TextGreen = Color.init(red: 162/ff, green: 208/ff, blue: 86/ff)
     let TextGray = Color.init(red: 196/ff, green: 196/ff, blue: 196/ff)
     let TextPink = Color.init(red: 210/ff, green: 28/ff, blue: 128/ff)
+    
     let BaseOrange = Color.init(red: 252/ff, green: 140/ff, blue: 41/ff)
+    let BaseCoral = Color.init(red: 238/ff, green: 90/ff, blue: 71/ff)
+    let BaseBlue = Color.init(red: 63/ff, green: 167/ff, blue: 214/ff)
+    let BaseMagenta = Color.init(red: 210/ff, green: 28/ff, blue: 128/ff)
+    let BaseMagentaDisabled = Color.init(red: 232/ff, green: 157/ff, blue: 198/ff)
+    //let BasePurple = Color.init(red: 72/ff, green: 56/ff, blue: 209/ff)
+    let BasePurple = Color.init(red: 132/ff, green: 118/ff, blue: 255/ff)
+    let BaseLightPurple = Color.init(red: 187/ff, green: 177/ff, blue: 250/ff)
+    let BaseDarkPurple = Color.init(red: 56/ff, green: 64/ff, blue: 117/ff)
+    
     
     let YellowStar = Color.init(red: 255/ff, green: 199/ff, blue: 0/ff)
     

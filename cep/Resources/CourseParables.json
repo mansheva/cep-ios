@@ -18,8 +18,8 @@
                     {
                         "type": "listen_audio",
                         "done": true,
-                        "data": "",
-                        "dataDescription": ""
+                        "data": "mf 13:3-23",
+                        "dataDescription": "Евангелие от Матфея, глава 13\nПритча о сеятеле"
                     },
                     {
                         "type": "watch_video",
@@ -50,8 +50,8 @@
                     {
                         "type": "listen_audio",
                         "done": true,
-                        "data": "",
-                        "dataDescription": ""
+                        "data": "mf 13:24-30, mf 13:36-43",
+                        "dataDescription": "Евангелие от Матфея, глава 13\nПритча о добром семени и плевелах"
                     },
                     {
                         "type": "watch_video",

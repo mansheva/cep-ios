@@ -7,53 +7,46 @@
 
 import SwiftUI
 
-var globalCurrentTranslationIndex: Int = 0
-let cTranslationsNames = ["SYNO", "НРП", "EASY", "РБЦ"]
-let cTranslationsCodes = ["SYNO", "NRT", "EASY", "RBC"]
-
 struct viewTaskReadExcerpt: View {
     
     var task: Task
     @State var currentTranslationIndex: Int = globalCurrentTranslationIndex
     
-    let cRadius = 6.0
-    //let cTranslations: [String:String] = ["SYNO":"SYNO", "NRT":"НРП", "2":"EASY", "3":"РБЦ"]
-    
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         
         VStack {
-            Text("Прочти отрывок")
-                .font(.largeTitle)
-                .fontWeight(.thin)
-                .foregroundColor(designColors.TextBlue)
-                .padding(.bottom, -7)
-            Text(task.dataDescription)
-                .font(.subheadline)
-                .fontWeight(.thin)
-                .foregroundColor(designColors.TextPink)
-                .padding(.bottom, 12)
+            viewBack() { dismiss() }
+            baseCaption(text: "Прочти отрывок")
+            baseSubCaption(text: task.dataDescription)
             
             viewTranslateButtons()
             
             ScrollView() {
-                ForEach(task.data.components(separatedBy: ","), id: \.self) { excerpt in
-                    if excerpt != "" {
-                        viewExcerptStrings(excerpt: excerpt)
-                    }
+                viewExcerpt(task: task, translationIndex: currentTranslationIndex)
+                
+                Button() {
+                    dismiss()
+                } label: {
+                    baseButtonLabel(text: "Готово!")
                 }
+                .padding(.bottom, 5)
             }
-            .padding(.top, 12)
         }
+        .padding(.horizontal, 22)
     }
+    
+    
     
     private func setTranslate(index: Int) {
         currentTranslationIndex = index
         globalCurrentTranslationIndex = index
     }
     
-    private func viewTranslateButtons() -> some View {
+    @ViewBuilder private func viewTranslateButtons() -> some View {
         
+        /*
         HStack(spacing: 1) {
             ForEach(Array(cTranslationsNames.enumerated()), id: \.element) { index, translation in
                 Button(translation)
@@ -79,61 +72,44 @@ struct viewTaskReadExcerpt: View {
         .font(.callout)
         .background(designColors.BaseOrange)
         .cornerRadius(cRadius)
+        //.frame(maxWidth: .infinity)
+        */
         
-    }
-    
-    @ViewBuilder
-    func viewExcerptStrings(excerpt: String) -> some View {
-        
-        //print(excerpt)
-        //if excerpt == "" {
-        //        return Text("Это странно, но отрывка нет")
-        //}
-        let currentTranslate = cTranslationsCodes[currentTranslationIndex]
-        let book22 = books[currentTranslate]
-        //print(currentTranslate)
-        
-        if book22 == nil {
-            Text("Этого перевода пока не существует!")
-        }
-        else {
-            
-            let arrExcerpt = excerpt.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: " ")
-            //let book_name = arrExcerpt[0]
-            let verses_address = arrExcerpt[1]
-            
-            let arrVersesAddress = verses_address.components(separatedBy: ":")
-            let chapter = Int(arrVersesAddress[0])!
-            let verses_interval = arrVersesAddress[1]
-            
-            let arrVersesInterval = verses_interval.components(separatedBy: "-")
-            let verse_first = Int(arrVersesInterval[0])!
-            let verse_last = arrVersesInterval.count > 1 ? Int(arrVersesInterval[1])! : Int(arrVersesInterval[0])!
-            
-            VStack {
-                ForEach(verse_first...verse_last, id: \.self) { verse_index in
-                    HStack(alignment: .top, spacing: 4) {
-                        Text(String(verse_index))
+        let columns = Array(repeating: GridItem(spacing: 1), count:cTranslationsNames.count)
+        LazyVGrid(columns: columns, spacing: 1.0) {
+            ForEach(Array(cTranslationsNames.enumerated()), id: \.element) { index, translation in
+                Button {
+                    self.setTranslate(index: index)
+                } label: {
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(index == currentTranslationIndex ? designColors.BaseOrange : .white)
+                            .cornerRadius(radius: index==0 ? cRadius : 0, corners: [.topLeft, .bottomLeft])
+                            .cornerRadius(radius: index==cTranslationsNames.count-1 ? cRadius : 0, corners: [.topRight, .bottomRight])
+                        Text(translation)
+                            .padding(.vertical, 10)
                             .font(.footnote)
-                            .foregroundColor(designColors.TextGray)
-                            .frame(width: 20, alignment: .top)
-                            .padding(.top, 3)
-                        //Text(book.chapters[chapter].verses[verse_index].text)
-                        Text((book22!.chapters.first(where: {element in element.id == chapter})?.verses.first(where: {element in element.id == verse_index})!.text)!)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundColor(index != currentTranslationIndex ? designColors.BaseOrange : .white )
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 4)
-                    //.frame(maxWidth: .infinity)
-                    
                 }
             }
         }
+        .foregroundColor(designColors.BaseOrange)
+        .overlay(
+            RoundedRectangle(cornerRadius: cRadius)
+                .stroke(designColors.BaseOrange, lineWidth: 2)
+        )
+        .font(.callout)
+        .background(designColors.BaseOrange)
+        .cornerRadius(cRadius)
+        .padding(.bottom, 10)
     }
+    
 }
 
 struct viewTaskReadExcerpt_Previews: PreviewProvider {
     static var previews: some View {
         viewTaskReadExcerpt(task: lessons[0].taskGroups[0].tasks[0])
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
     }
 }
