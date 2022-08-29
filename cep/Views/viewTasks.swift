@@ -112,6 +112,7 @@ struct viewTasks: View {
         switch task.type {
         case "read_excerpt": viewTaskReadExcerpt(task: task)
         case "listen_audio": viewTaskListenAudio(task: task)
+        case "watch_video": viewTaskWatchVideo(task: task)
         default: viewTaskReadExcerpt(task: task)
         }
     }
